@@ -1,4 +1,4 @@
-# mov-Samaniego-Zapata-Daniel-Alejandrojk
+# mov-Samaniego-Zapata-Daniel-Alejandroj
 Cambio 1 
 Cambio Pepito 1
 Cambio Pepito 2

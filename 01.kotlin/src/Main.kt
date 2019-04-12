@@ -58,17 +58,17 @@ println(tieneNombreYApellido)
 
     val arregloCumpleaños = arrayOf(1, 2, 3, 4)
 
-    val arregloTodo: Array<Any>= arrayOf(1, "asd", 1.3, true)
+    var arregloTodo: Array<Any>= arrayOf(1, "asd", 1.3, true)
 
     arregloCumpleaños[0] = 5
     arregloCumpleaños.set(0, 5)
 
-    arregloCumpleaños = arrayOf(5, 2, 3, 4)
+    arregloTodo = arrayOf(5, 2, 3, 4)
 
     val fecha = Date()
     fecha.time = 1123212
     fecha.year = 2000
-    fecha = Date(1989, 6, 10)
+    // fecha = Date(1989, 6, 10)
 
 
 

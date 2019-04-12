@@ -51,9 +51,26 @@ println(tieneNombreYApellido)
     estaJalado(0.0)
     estaJalado(7.0)
     estaJalado(10.0)
+    holaMundo(mensaje: "Adrian")
+    holaMundoAvanzado(2)
+    val total = sumarDosNumeros(1, 3)
+    pintln(total)
+
+    val arregloCumpleaños = arrayOf(1, 2, 3, 4)
+
+    val arregloTodo: Array<Any>= arrayOf(1, "asd", 1.3, true)
+
+    arregloCumpleaños[0] = 5
+    arregloCumpleaños.set(0, 5)
+    
+
 
 }
 
+
+fun sumarDosNumeros(numUno: Int, numDos: Int):Int{
+    return numUno + numDos
+}
 
 fun estaJalado(nota:Double): Double{
     when(nota){
@@ -73,3 +90,16 @@ fun estaJalado(nota:Double): Double{
     }
     return nota
 }
+
+
+fun holaMundo(mensaje: String): Unit {
+    println("Mensaje: $mensaje.")
+}
+
+fun holaMundoAvanzado(mensaje: Any): Unit {
+    println("Mensaje: $mensaje.")
+}
+
+
+
+

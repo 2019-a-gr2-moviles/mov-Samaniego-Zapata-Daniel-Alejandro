@@ -63,6 +63,14 @@ println(tieneNombreYApellido)
     arregloCumpleaños[0] = 5
     arregloCumpleaños.set(0, 5)
 
+    arregloCumpleaños = arrayOf(5, 2, 3, 4)
+
+    val fecha = Date()
+    fecha.time = 1123212
+    fecha.year = 2000
+    fecha = Date(1989, 6, 10)
+
+
 
 
 }

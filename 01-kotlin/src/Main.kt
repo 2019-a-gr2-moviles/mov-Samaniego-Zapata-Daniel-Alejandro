@@ -67,7 +67,7 @@ fun main(args : Array<String>){
 
     // val notas: ArrayList<Int> = arrayListOf<Int>(1, 2, 3, 4, 5, 6) hace lo mismo que lo de abajo
     val notas = arrayListOf (1,2,3,4,5,6)
-    
+
     // FOR EACH -> Itera el arreglo
     notas.forEachIndexed { indice, nota ->
         println("Indice: $indice")

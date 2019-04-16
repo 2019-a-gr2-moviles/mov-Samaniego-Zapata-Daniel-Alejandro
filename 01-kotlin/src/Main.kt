@@ -143,14 +143,13 @@ fun main(args : Array<String>){
     fecha.time = 1123212
     fecha.year = 2000*/
     // fecha = Date(1989, 6, 10)
-
-
-
+    
 
 }
 
 
 fun sumarDosNumeros(numUno: Int, numDos: Int):Int{
+    println("Sumar dos números:")
     return numUno + numDos
 }
 

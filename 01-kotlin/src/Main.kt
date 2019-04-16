@@ -1,3 +1,5 @@
+import java.util.*
+
 fun main(args : Array<String>){
     //println("Hello, world!")
 
@@ -56,14 +58,20 @@ fun main(args : Array<String>){
     val total = sumarDosNumeros(1, 3)
     println(total)
 
-    val arregloCumpleaños = arrayOf(1, 2, 3, 4)
+    val arregloCumpleaños: Array<Int> = arrayOf(1, 2, 3, 4)
 
     var arregloTodo: Array<Any?> = arrayOf("asd", 1, null, true)
 
+    //Cambiar el primer número de arreglo de enteros por 5
     arregloCumpleaños[0] = 5
     arregloCumpleaños.set(0, 5)
 
     arregloTodo = arrayOf(5, 2, 3, 4)
+
+    /*val fecha = Date()
+    fecha.time = 11231231
+    fecha.year = 2000*/
+    //fecha = Date(1989,6,10)
 
     // val notas: ArrayList<Int> = arrayListOf<Int>(1, 2, 3, 4, 5, 6) hace lo mismo que lo de abajo
     val notas = arrayListOf (1,2,3,4,5,6)
@@ -72,6 +80,7 @@ fun main(args : Array<String>){
     notas.forEachIndexed { indice, nota ->
         println("Indice: $indice")
         println("Nota: $nota")
+
     }
 
 
@@ -90,7 +99,6 @@ fun main(args : Array<String>){
         }
     }
 
-
     notasDos.forEach{
         println("Notas 2: $it")
     }
@@ -107,7 +115,7 @@ fun main(args : Array<String>){
     val respuestaFilter1 = notas.filter {
         it in 3..5
         // it > 2 && it < 6
-    }
+        }
         .map {
             it*2   //Multiplica a todos los valores de la lista por 2
         }
@@ -118,6 +126,7 @@ fun main(args : Array<String>){
 
     val novias = arrayListOf(1, 2, 3, 4, 5, 6, 6, 7)
 
+    //Busca el elemento que yo pida
     val respuestaNovia = novias.any{
         it == 3
     }
@@ -143,7 +152,7 @@ fun main(args : Array<String>){
     fecha.time = 1123212
     fecha.year = 2000*/
     // fecha = Date(1989, 6, 10)
-    
+
 
 }
 

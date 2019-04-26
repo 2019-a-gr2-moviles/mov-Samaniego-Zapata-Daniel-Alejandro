@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="34fa6ac8-d787-4239-8f8f-c00ca4ba16eb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../01-kotlin/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../01-kotlin/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../01-kotlin/.idea/kotlinc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../01-kotlin/.idea/libraries/KotlinJavaRuntime.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../01-kotlin/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../01-kotlin/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../01-kotlin/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../01-kotlin/01-kotlin.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../01-kotlin/out/production/01-kotlin/MainKt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../01-kotlin/src/Main.kt" beforeDir="false" />
-    </list>
+    <list default="true" id="34fa6ac8-d787-4239-8f8f-c00ca4ba16eb" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,8 +18,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="502">
-              <caret line="197" lean-forward="true" selection-start-line="197" selection-end-line="197" />
+            <state relative-caret-position="322">
+              <caret line="185" lean-forward="true" selection-start-line="185" selection-end-line="185" />
             </state>
           </provider>
         </entry>
@@ -169,7 +158,7 @@
       <window_info anchor="bottom" id="Messages" weight="0.32977778" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32977778" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32977778" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -187,8 +176,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Main.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="197" lean-forward="true" selection-start-line="197" selection-end-line="197" />
+        <state relative-caret-position="322">
+          <caret line="185" lean-forward="true" selection-start-line="185" selection-end-line="185" />
         </state>
       </provider>
     </entry>

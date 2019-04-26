@@ -2,10 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="34fa6ac8-d787-4239-8f8f-c00ca4ba16eb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../01-kotlin/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../01-kotlin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../01-kotlin/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../01-kotlin/out/production/01-kotlin/META-INF/01-kotlin.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01-kotlin/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01-kotlin/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01-kotlin/.idea/kotlinc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01-kotlin/.idea/libraries/KotlinJavaRuntime.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01-kotlin/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01-kotlin/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01-kotlin/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01-kotlin/01-kotlin.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01-kotlin/out/production/01-kotlin/MainKt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01-kotlin/src/Main.kt" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,8 +29,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="35" column="7" lean-forward="true" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
+            <state relative-caret-position="502">
+              <caret line="197" lean-forward="true" selection-start-line="197" selection-end-line="197" />
             </state>
           </provider>
         </entry>
@@ -83,6 +89,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -180,8 +187,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Main.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="7" lean-forward="true" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
+        <state relative-caret-position="502">
+          <caret line="197" lean-forward="true" selection-start-line="197" selection-end-line="197" />
         </state>
       </provider>
     </entry>

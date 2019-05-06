@@ -1,17 +1,17 @@
 [
     {
       "id":"0001",
-      "antibiotico":"Agrogenta",
+      "producto":"Antibiótico",
       "fecha_Exp":"12/05/2021"
     },
     {
       "id":"0002",
-      "antibiotico":"Amoxi",
+      "producto":"Croquetas",
       "fecha_Exp":"06/08/2022"
     },
     {
       "id":"0003",
-      "antibiotico":"Liquacef",
+      "producto":"Accesorios",
       "fecha_Exp":"01/12/2020"
     }
 ]

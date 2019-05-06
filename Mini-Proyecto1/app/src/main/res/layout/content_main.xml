@@ -9,18 +9,18 @@
         tools:showIn="@layout/activity_main"
         tools:context=".MainActivity">
     <Button
-            android:text="CATALOGO PRODUCTO"
-            android:layout_width="145dp"
+            android:text="@string/catalogo_producto"
+            android:layout_width="164dp"
             android:layout_height="67dp"
             android:id="@+id/catProducto" android:background="@color/colorPrimary"
             app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="192dp"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="123dp"
             android:layout_marginStart="123dp" app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="143dp" android:layout_marginRight="143dp"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.842"
             android:layout_marginBottom="31dp" app:layout_constraintBottom_toTopOf="@+id/producto"/>
     <Button
-            android:text="PRODUCTO"
+            android:text="@string/producto"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/producto" android:background="@color/colorPrimary"

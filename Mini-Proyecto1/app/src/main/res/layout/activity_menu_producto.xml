@@ -5,6 +5,18 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MenuProducto">
-
+        tools:context=".ListarProducto">
+    <Button
+            android:text="Ingresar Nuevo Producto"
+            android:layout_width="wrap_content"
+            android:layout_height="51dp"
+            android:id="@+id/ingresarNuevoProducto" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="177dp"
+            android:layout_marginRight="177dp" android:layout_marginBottom="72dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"/>
+    <ListView
+            android:layout_width="395dp"
+            android:layout_height="541dp" tools:layout_editor_absoluteY="59dp" tools:layout_editor_absoluteX="8dp"/>
 </android.support.constraint.ConstraintLayout>

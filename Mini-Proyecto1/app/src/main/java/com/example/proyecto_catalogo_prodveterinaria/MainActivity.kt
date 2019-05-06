@@ -7,6 +7,7 @@ import android.view.Menu
 import android.view.MenuItem
 
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_menu_catalogo_producto.*
 import kotlinx.android.synthetic.main.content_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -26,10 +27,8 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        producto.setOnClickListener {
-            val intent = Intent(this, RegistrarProducto::class.java)
-            startActivity(intent)
-        }
+
+
 
     }
 

@@ -9,6 +9,11 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+        <activity
+                android:name=".ingresarProducto"
+                android:label="@string/title_activity_ingresar_producto"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
         <activity android:name=".ingresarTipoProducto">
         </activity>
         <activity android:name=".ListarProducto">

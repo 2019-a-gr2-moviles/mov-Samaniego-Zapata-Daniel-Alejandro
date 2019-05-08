@@ -39,7 +39,7 @@ class MenuCatProducto : AppCompatActivity() {
 
             for (i in 0..jsonArreglo.length()-1) {
                 var jsonObjeto = jsonArreglo.getJSONObject(i)
-                arrayListaCatProducto.add(jsonObjeto.getString("producto"))
+                arrayListaCatProducto.add(jsonObjeto.getString("tipo_Producto"))
             }
 
             var adapt = ArrayAdapter(this, android.R.layout.simple_list_item_1,arrayListaCatProducto)

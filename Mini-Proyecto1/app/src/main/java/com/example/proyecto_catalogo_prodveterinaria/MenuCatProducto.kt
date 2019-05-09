@@ -8,6 +8,7 @@ import kotlinx.android.synthetic.main.activity_menu_catalogo_producto.*
 import java.io.InputStream
 import java.io.IOException
 import org.json.JSONArray
+import java.io.File
 
 
 class MenuCatProducto : AppCompatActivity() {
@@ -17,7 +18,8 @@ class MenuCatProducto : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu_catalogo_producto)
-        read_json()
+        //read_json()
+        listarJsonArrayTipPro()
 
         ingresarNuevoTipoProducto.setOnClickListener {
             val intent = Intent(this, ingresarTipoProducto::class.java)
@@ -25,30 +27,29 @@ class MenuCatProducto : AppCompatActivity() {
         }
     }
 
-
-
-    fun read_json() {
+    fun listarJsonArrayTipPro() {
         var json: String? = null
 
         try {
-            val inputStream: InputStream = assets.open("tipoProducto.json")
+            val inputStream: InputStream = File("/data/data/com.example.proyecto_catalogo_prodveterinaria/files/tipoProducto.json").inputStream()
             json = inputStream.bufferedReader().use { it.readText() }
+            val jsonCompleto: String = "[" + json.toString() + "]"
+            var jsonarr = JSONArray(jsonCompleto)
 
-            var jsonArreglo = JSONArray(json)   // del json le cambio a un arreglo
-
-
-            for (i in 0..jsonArreglo.length()-1) {
-                var jsonObjeto = jsonArreglo.getJSONObject(i)
-                arrayListaCatProducto.add(jsonObjeto.getString("tipo_Producto"))
+            for (i in 0..jsonarr.length()-1) {
+                var jsonobj = jsonarr.getJSONObject(i)
+                arrayListaCatProducto.add(jsonobj.getString("producto"))
+                //arrayListaCatProducto.add(jsonobj.getString("nacionalidad"))
             }
-
-            var adapt = ArrayAdapter(this, android.R.layout.simple_list_item_1,arrayListaCatProducto)
-            listViewCatProducto.adapter = adapt
-
+            var adpt = ArrayAdapter(this, android.R.layout.simple_list_item_1,arrayListaCatProducto)
+            //adpt = ArrayAdapter(this, android.R.layout.simple_list_item_2,arrListaNacionalidad)
+            listViewCatProducto.adapter = adpt
         }
         catch (e: IOException) {
-
+            println(e.toString())
         }
     }
+
+
 
 }

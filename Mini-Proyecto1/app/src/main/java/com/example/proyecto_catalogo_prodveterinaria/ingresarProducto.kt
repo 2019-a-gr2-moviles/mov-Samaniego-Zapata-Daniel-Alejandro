@@ -8,7 +8,9 @@ import kotlinx.android.synthetic.main.activity_ingresar_producto.*
 
 class ingresarProducto : AppCompatActivity() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
+    private var jsonTipProInicial:String?=null
+
+        override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ingresar_producto)
         setSupportActionBar(toolbar)

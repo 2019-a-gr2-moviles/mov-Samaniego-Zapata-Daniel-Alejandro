@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ingresarTipoProducto">
+
+    <Button
+            android:text="Percha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/percha"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="25dp" android:layout_marginStart="25dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="298dp" android:layout_marginRight="298dp"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:layout_marginTop="15dp" app:layout_constraintTop_toBottomOf="@+id/textInputTipoProducto"
+            android:layout_marginBottom="15dp" app:layout_constraintBottom_toTopOf="@+id/textInputPercha"/>
+    <Button
+            android:text="Tipo de Producto:"
+            android:layout_width="wrap_content"
+            android:layout_height="47dp"
+            android:id="@+id/nombreTipoProducto"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="24dp"
+            android:layout_marginStart="24dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="230dp"
+            android:layout_marginRight="230dp"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:layout_marginTop="33dp"
+            app:layout_constraintTop_toBottomOf="@+id/textInputId"
+            android:layout_marginBottom="20dp" app:layout_constraintBottom_toTopOf="@+id/textInputTipoProducto"/>
+    <android.support.design.widget.TextInputLayout
+            android:layout_width="395dp"
+            android:layout_height="62dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp" android:id="@+id/textInputTipoProducto"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintHorizontal_bias="0.0" android:layout_marginTop="5dp"
+            app:layout_constraintTop_toBottomOf="@+id/nombreTipoProducto"
+            android:layout_marginBottom="20dp" app:layout_constraintBottom_toTopOf="@+id/percha">
+
+        <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp" android:id="@+id/textInputTipoProducto"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                tools:layout_editor_absoluteY="334dp" app:layout_constraintHorizontal_bias="1.0">
+
+            <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Ej. Antibiótico, croquetas, etc."
+                    android:id="@+id/layoutTipoProducto"/>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ej. Antibiótico, croquetas, etc."
+                android:id="@+id/layoutTipoProducto"/>
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+            android:layout_width="395dp"
+            android:layout_height="63dp"
+            android:id="@+id/textInputPercha"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+            app:layout_constraintHorizontal_bias="0.0" android:layout_marginTop="35dp"
+            app:layout_constraintTop_toBottomOf="@+id/percha"
+            android:layout_marginBottom="25dp" app:layout_constraintBottom_toTopOf="@+id/guardar">
+
+        <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ej. 1, 2, 3" android:id="@+id/layoutPercha"/>
+    </android.support.design.widget.TextInputLayout>
+    <Button
+            android:text="ID:"
+            android:layout_width="92dp"
+            android:layout_height="46dp"
+            android:id="@+id/id" android:layout_marginEnd="293dp" android:layout_marginRight="293dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="26dp" android:layout_marginStart="26dp" android:layout_marginTop="36dp"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="15dp"
+            app:layout_constraintBottom_toTopOf="@+id/textInputId"/>
+    <android.support.design.widget.TextInputLayout
+            android:layout_width="395dp"
+            android:layout_height="54dp"
+            android:id="@+id/textInputId" android:layout_marginTop="5dp"
+            app:layout_constraintTop_toBottomOf="@+id/id" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+            android:layout_marginBottom="20dp" app:layout_constraintBottom_toTopOf="@+id/nombreTipoProducto">
+
+        <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ej: 0001" android:id="@+id/layoutId"/>
+    </android.support.design.widget.TextInputLayout>
+    <Button
+            android:text="Guardar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/guardar" android:layout_marginTop="32dp"
+            app:layout_constraintTop_toBottomOf="@+id/textInputPercha" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="24dp" android:layout_marginStart="24dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="299dp" android:layout_marginRight="299dp"
+            app:layout_constraintHorizontal_bias="0.0"/>
+</android.support.constraint.ConstraintLayout>

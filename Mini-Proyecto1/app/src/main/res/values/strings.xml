@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Proyecto_Catalogo_Prod.Veterinaria</string>
+    <string name="action_settings">Settings</string>
+    <string name="catalogo_producto">CATALOGO PRODUCTO</string>
+    <string name="producto">PRODUCTO</string>
+    <string name="title_activity_ingresar_producto">ingresarProducto</string>
+</resources>

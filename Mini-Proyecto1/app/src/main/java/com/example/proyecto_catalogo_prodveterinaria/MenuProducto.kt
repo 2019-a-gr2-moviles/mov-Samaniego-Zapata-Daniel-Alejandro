@@ -13,7 +13,7 @@ import java.io.InputStream
 
 class MenuProducto : AppCompatActivity() {
 
-    var arrayListaProducto = arrayListOf<String>()
+    //var arrayListaProducto = arrayListOf<String>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

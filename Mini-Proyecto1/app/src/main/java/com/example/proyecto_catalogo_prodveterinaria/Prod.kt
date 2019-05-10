@@ -2,7 +2,7 @@ package com.example.proyecto_catalogo_prodveterinaria
 
 import com.google.gson.annotations.SerializedName
 
-data class TipoProducto(
+data class Producto(
     @SerializedName("id") val id: Int,
     @SerializedName("tipoProducto") val tipoProducto: String,
     @SerializedName("percha") val percha: Int
@@ -23,7 +23,3 @@ class Post {
     }
 
 }
-
-
-
-

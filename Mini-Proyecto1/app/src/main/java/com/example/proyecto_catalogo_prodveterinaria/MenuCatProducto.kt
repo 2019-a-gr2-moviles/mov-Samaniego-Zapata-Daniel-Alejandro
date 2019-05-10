@@ -39,10 +39,8 @@ class MenuCatProducto : AppCompatActivity() {
             for (i in 0..jsonarr.length()-1) {
                 var jsonobj = jsonarr.getJSONObject(i)
                 arrayListaCatProducto.add(jsonobj.getString("producto"))
-                //arrayListaCatProducto.add(jsonobj.getString("nacionalidad"))
             }
             var adpt = ArrayAdapter(this, android.R.layout.simple_list_item_1,arrayListaCatProducto)
-            //adpt = ArrayAdapter(this, android.R.layout.simple_list_item_2,arrListaNacionalidad)
             listViewCatProducto.adapter = adpt
         }
         catch (e: IOException) {

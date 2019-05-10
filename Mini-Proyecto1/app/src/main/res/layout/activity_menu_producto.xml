@@ -9,7 +9,7 @@
     <Button
             android:text="Ingresar Nuevo Producto"
             android:layout_width="wrap_content"
-            android:layout_height="51dp"
+            android:layout_height="46dp"
             android:id="@+id/ingresarNuevoProducto" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginLeft="16dp"
             android:layout_marginStart="16dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="177dp"

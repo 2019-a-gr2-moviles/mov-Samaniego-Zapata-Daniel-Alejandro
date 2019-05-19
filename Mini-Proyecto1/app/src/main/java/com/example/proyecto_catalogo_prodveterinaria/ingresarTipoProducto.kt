@@ -28,16 +28,16 @@ class ingresarTipoProducto : AppCompatActivity() {
         val et_idInput = findViewById<TextInputEditText>(R.id.layoutId)
         val et_tipoProductoInput = findViewById<TextInputEditText>(R.id.layoutTipoProducto)
         val et_perchaInput = findViewById<TextInputEditText>(R.id.layoutPercha)
-        val id:Int= 1
+        val id = 1
         val tipo_Producto = et_tipoProductoInput.text.toString()
-        val percha = et_perchaInput.text.toString()
+        val percha = et_perchaInput.text.toString().toInt()
 
         writeJSONtoFile(id, tipo_Producto, percha)
             mostrarMensaje("Tipo de Producto registrado con éxito")
             }
     }
 
-    private fun writeJSONtoFile(id: Int, Tipo_Producto: String, Percha:String) {
+    private fun writeJSONtoFile(id: Int, Tipo_Producto: String, Percha:Int) {
         readJSONfromFile()
         var post = Post(id, Tipo_Producto, Percha)
         var gson = Gson()

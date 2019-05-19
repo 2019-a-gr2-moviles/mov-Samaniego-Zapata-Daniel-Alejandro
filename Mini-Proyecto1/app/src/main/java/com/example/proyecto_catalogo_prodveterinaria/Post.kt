@@ -4,22 +4,22 @@ import com.google.gson.annotations.SerializedName
 
 data class TipoProducto(
     @SerializedName("id") val id: Int,
-    @SerializedName("producto") val producto: String,
-    @SerializedName("fecha_Exp") val fecha_Exp: String
+    @SerializedName("tipoProducto") val tipoProducto: String,
+    @SerializedName("percha") val percha: Int
 )
 
 class Post {
     var id: Number? = null
-    var producto: String? = null
-    var fecha_Exp: String? = null
+    var tipoProducto: String? = null
+    var percha: Number? = null
     //var postTag: List<String>? = null
 
     constructor() : super() {}
 
-    constructor(Id: Number, Producto: String, Fecha_Expiracion: String) : super() {
+    constructor(Id: Number, Tipo_Producto: String, Percha: Number) : super() {
         this.id = Id
-        this.producto = Producto
-        this.fecha_Exp = Fecha_Expiracion
+        this.tipoProducto = Tipo_Producto
+        this.percha = Percha
     }
 
 }

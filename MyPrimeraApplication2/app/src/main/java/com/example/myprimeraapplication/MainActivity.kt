@@ -4,6 +4,7 @@ import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
+import java.util.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -15,6 +16,10 @@ class MainActivity : AppCompatActivity() {
             //this.irAActividadDos()
             irAActividadDos()
         }
+        btn_parcelable.setOnClickListener {
+            irAParcelable()
+        }
+
     }
 
     fun irAActividadDos(){
@@ -26,6 +31,24 @@ class MainActivity : AppCompatActivity() {
         intent.putExtra("edad", 29)
 
         startActivity(intent)
+    }
+
+    fun irAParcelable(){
+        val intentExplicito = Intent(
+            this, Parcelable::class.java
+        )
+
+        val daniel = Usuario("Daniel",
+            29,
+            Date(),
+            12.12)
+        intentExplicito.putExtra("usuario", daniel)
+
+        val cachetes = Mascota("Cachetes", daniel)
+        intentExplicito.putExtra("mascota", cachetes)
+
+        startActivity(intentExplicito)
+
     }
 
 

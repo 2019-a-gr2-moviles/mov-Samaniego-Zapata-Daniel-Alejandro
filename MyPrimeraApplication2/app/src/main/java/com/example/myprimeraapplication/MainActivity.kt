@@ -3,6 +3,7 @@ package com.example.myprimeraapplication
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.design.widget.Snackbar
 import kotlinx.android.synthetic.main.activity_main.*
 import java.util.*
 
@@ -18,6 +19,10 @@ class MainActivity : AppCompatActivity() {
         }
         btn_parcelable.setOnClickListener {
             irAParcelable()
+        }
+
+        btn_adapter.setOnClickListener {
+            irAListView()
         }
 
     }
@@ -51,6 +56,19 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+    fun irAListView(){
+        val intentExplicito = Intent(
+            this, ListViewActivity::class.java
+        )
+        startActivity(intentExplicito)
+    }
+
+    fun irAToast(){
+        val intentExplicito = Intent(
+            this, Snackbar::class.java
+        )
+        startActivity(intentExplicito)
+    }
 
 }
 

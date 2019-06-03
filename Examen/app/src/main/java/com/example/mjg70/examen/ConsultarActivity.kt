@@ -9,6 +9,7 @@ import kotlinx.android.synthetic.main.activity_consultar.*
 
 class ConsultarActivity : AppCompatActivity() {
     var usuario :String = ""
+    //var
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_consultar)
@@ -18,8 +19,8 @@ class ConsultarActivity : AppCompatActivity() {
             android.R.layout.simple_list_item_1,
             BDEstudiante.mostrarEstudiante()
         )
-        listView.adapter = adapter;
-        listView.onItemClickListener = AdapterView.OnItemClickListener { parent, view, position, id ->
+        listViewMat.adapter = adapter;
+        listViewMat.onItemClickListener = AdapterView.OnItemClickListener { parent, view, position, id ->
 
             val estudianteSeleccionado = parent.getItemAtPosition(position) as Estudiante
             val intentEstudianteSeleccionado = Intent(this, ActualizarActivity::class.java)

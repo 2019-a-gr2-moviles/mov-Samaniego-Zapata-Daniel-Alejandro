@@ -9,7 +9,7 @@ import kotlinx.android.synthetic.main.activity_consultar_materia.*
 
 class ConsultarMateriaActivity : AppCompatActivity() {
     var padreId : Int = 0
-    var usuario :String = "";
+    var usuario :String = ""
     var estudianteRespaldo : Estudiante? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,8 +22,8 @@ class ConsultarMateriaActivity : AppCompatActivity() {
             android.R.layout.simple_list_item_1,
             BDMateria.mostrarMateria(padreId)
         )
-        listView.adapter = adapter;
-        listView.onItemClickListener = AdapterView.OnItemClickListener { parent, view, position, id ->
+        listViewMat.adapter = adapter;
+        listViewMat.onItemClickListener = AdapterView.OnItemClickListener { parent, view, position, id ->
 
             val materiaSeleccionado = parent.getItemAtPosition(position) as Materia
             val intentMateriaSeleccionado = Intent(this, ActualizarMateriaActivity::class.java)

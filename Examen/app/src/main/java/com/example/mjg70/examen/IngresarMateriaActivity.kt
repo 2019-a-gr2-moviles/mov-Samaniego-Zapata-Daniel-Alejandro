@@ -16,7 +16,7 @@ class IngresarMateriaActivity : AppCompatActivity() {
         usuario = intent.getStringExtra("usuario").toString()
         estudianteRespaldo = intent.getParcelableExtra<Estudiante>("EstudianteRespaldo")
         padreId = intent.getIntExtra("padreId", -1)
-        btnGuardar.setOnClickListener { guardarMateria() }
+        btnGuardarMateria.setOnClickListener { guardarMateria() }
     }
 
     fun guardarMateria(){

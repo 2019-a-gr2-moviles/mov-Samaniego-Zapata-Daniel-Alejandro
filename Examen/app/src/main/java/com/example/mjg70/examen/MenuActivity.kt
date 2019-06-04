@@ -12,7 +12,7 @@ class MenuActivity : AppCompatActivity() {
         setContentView(R.layout.activity_menu)
         usuario = intent.getStringExtra("usuario").toString()
         btnEstudiante.setOnClickListener {gestionarEstudiante() }
-        btnCrearMateria.setOnClickListener{ crearEstudiante()}
+        btnCrearMat.setOnClickListener{ crearEstudiante()}
     }
 
     fun gestionarEstudiante(){

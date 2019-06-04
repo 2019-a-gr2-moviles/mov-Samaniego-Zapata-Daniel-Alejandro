@@ -12,8 +12,8 @@ class IngresarActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ingresar)
         usuario = intent.getStringExtra("usuario").toString()
-        btnGuardarEst.setOnClickListener { aceptarIngreso() }
-        btnCancelar.setOnClickListener { cancelarIngreso()}
+        btnGuardarEstudiante.setOnClickListener { aceptarIngreso() }
+        btnCancelarEstudiante.setOnClickListener { cancelarIngreso()}
     }
 
     fun cancelarIngreso(){

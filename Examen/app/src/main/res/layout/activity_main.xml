@@ -16,12 +16,12 @@
             app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="144dp"
             app:layout_constraintTop_toTopOf="parent" android:hint="Ingrese Nombre"/>
     <Button
-            android:text="Entrar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/btnEntrar" app:layout_constraintEnd_toEndOf="@+id/imput_Nombre"
             app:layout_constraintStart_toStartOf="@+id/imput_Nombre" android:layout_marginStart="8dp"
             android:layout_marginTop="76dp" app:layout_constraintTop_toBottomOf="@+id/imput_Nombre"
             app:layout_constraintHorizontal_bias="0.498" android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.109"/>
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.109"
+            android:text="@string/btnEntrar"/>
 </android.support.constraint.ConstraintLayout>

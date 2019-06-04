@@ -60,15 +60,15 @@
             android:layout_height="wrap_content"
             android:inputType="number"
             android:ems="10"
-            android:id="@+id/txtnumeroMateria" android:layout_marginTop="124dp"
+            android:id="@+id/txtnumeroMateria" android:layout_marginTop="56dp"
             app:layout_constraintTop_toTopOf="parent" android:layout_marginEnd="8dp"
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="8dp"
             app:layout_constraintStart_toStartOf="parent" android:hint="Numero Materia"/>
     <Button
-            android:text="Guardar Materia"
+            android:text="@string/btnGuardarMateria"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/btnGuardar" app:layout_constraintStart_toStartOf="@+id/txtHorasSemanales"
+            android:id="@+id/btnGuardarMateria" app:layout_constraintStart_toStartOf="@+id/txtHorasSemanales"
             app:layout_constraintEnd_toEndOf="@+id/txtHorasSemanales"
             app:layout_constraintHorizontal_bias="0.496"
             android:layout_marginTop="44dp" app:layout_constraintTop_toBottomOf="@+id/txtHorasSemanales"/>

@@ -44,37 +44,39 @@
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="8dp"
             app:layout_constraintStart_toStartOf="parent"/>
     <Button
-            android:text="Eliminar"
+            android:text="@string/btnEliminarEst"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/btnEliminar"
-            app:layout_constraintStart_toStartOf="@+id/btnActualizar"
-            app:layout_constraintEnd_toEndOf="@+id/btnActualizar" android:layout_marginTop="12dp"
-            app:layout_constraintTop_toBottomOf="@+id/btnActualizar"/>
+            android:id="@+id/btnEliminarEst"
+            android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@+id/btnActualizarEst" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="72dp"/>
     <Button
-            android:text="Actualizar"
+            android:text="@string/btnActualizarEst"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/btnActualizar"
-            app:layout_constraintStart_toStartOf="@+id/txtGraduadoAct"
-            app:layout_constraintEnd_toEndOf="@+id/txtGraduadoAct" android:layout_marginTop="20dp"
-            app:layout_constraintTop_toBottomOf="@+id/txtGraduadoAct" app:layout_constraintHorizontal_bias="0.495"/>
+            android:id="@+id/btnActualizarEst"
+            android:layout_marginTop="40dp"
+            app:layout_constraintTop_toBottomOf="@+id/txtGraduadoAct" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="52dp"/>
     <Button
-            android:text="Crear Materia"
+            android:text="@string/btnCrearMat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/btnCrearMateria"
-            app:layout_constraintStart_toStartOf="@+id/btnEliminar"
-            app:layout_constraintEnd_toEndOf="@+id/btnEliminar" android:layout_marginTop="12dp"
-            app:layout_constraintTop_toBottomOf="@+id/btnEliminar" app:layout_constraintHorizontal_bias="0.492"/>
+            android:id="@+id/btnCrearMat"
+            android:layout_marginTop="40dp"
+            app:layout_constraintTop_toBottomOf="@+id/txtGraduadoAct" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="72dp" app:layout_constraintStart_toEndOf="@+id/btnActualizarEst"
+            android:layout_marginStart="8dp" app:layout_constraintHorizontal_bias="1.0"/>
     <Button
-            android:text="Gestionar Materia"
+            android:text="@string/btnGestionarMateria"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/btnGestionarMateria"
-            app:layout_constraintStart_toStartOf="@+id/btnCrearMateria"
-            app:layout_constraintEnd_toEndOf="@+id/btnCrearMateria" android:layout_marginTop="12dp"
-            app:layout_constraintTop_toBottomOf="@+id/btnCrearMateria" app:layout_constraintHorizontal_bias="0.515"/>
+            app:layout_constraintStart_toEndOf="@+id/btnEliminarEst" android:layout_marginStart="25dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintHorizontal_bias="0.0" android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@+id/btnCrearMat"/>
     <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -85,10 +87,12 @@
             app:layout_constraintEnd_toEndOf="@+id/txtFechaNacimiento" android:layout_marginTop="8dp"
             app:layout_constraintTop_toBottomOf="@+id/txtFechaNacimiento"/>
     <Button
-            android:text="Menú"
+            android:text="@string/btnMenuRetorno"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/btnMenuRetorno"
-            tools:layout_editor_absoluteY="623dp"
-            tools:layout_editor_absoluteX="161dp" android:visibility="invisible"/>
+            android:visibility="visible"
+            android:layout_marginTop="24dp" app:layout_constraintTop_toBottomOf="@+id/btnGestionarMateria"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="161dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="162dp"/>
 </android.support.constraint.ConstraintLayout>

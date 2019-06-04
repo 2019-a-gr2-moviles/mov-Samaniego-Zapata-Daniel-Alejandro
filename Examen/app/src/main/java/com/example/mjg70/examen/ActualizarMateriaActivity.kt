@@ -7,7 +7,7 @@ import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_actualizar_materia.*
 
 class ActualizarMateriaActivity : AppCompatActivity() {
-    var id :Int = 0;
+    var id :Int = 0
     var idPadre :Int = 0
     var usuario :String = "";
     var estudianteRespaldo : Estudiante? = null
@@ -30,7 +30,7 @@ class ActualizarMateriaActivity : AppCompatActivity() {
     }
 
     fun actualizarMateria(){
-        val materia = Materia(id = id,
+        val materia = Materia(id = null,
             numeroMateria = txtnumeroMateria.text.toString().toInt(),
             codigo = txtCodigo.text.toString(),
             descripcion = txtDescripcion.text.toString(),
@@ -51,7 +51,7 @@ class ActualizarMateriaActivity : AppCompatActivity() {
         Toast.makeText(this, "Eliminación jugador exitosa "+usuario, Toast.LENGTH_SHORT).show()
         val retorno = Intent(this, ActualizarActivity::class.java)
         retorno.putExtra("usuario", usuario)
-        retorno.putExtra("Equipo", estudianteRespaldo)
+        retorno.putExtra("Estudiante", estudianteRespaldo)
         startActivity(retorno)
     }
 }

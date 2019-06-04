@@ -22,9 +22,9 @@ class ActualizarActivity : AppCompatActivity() {
         txtSemestreActual.setText(estudianteRecibido.semestreActual.toString())
         txtGraduadoAct.setText(estudianteRecibido.graduado.toString())
         padreId = estudianteRecibido.id!!;
-        btnActualizar.setOnClickListener { actualizarEstudiante() }
-        btnEliminar.setOnClickListener { eliminarEstudiante() }
-        btnCrearMateria.setOnClickListener { crearMateria() }
+        btnActualizarEst.setOnClickListener { actualizarEstudiante() }
+        btnEliminarEst.setOnClickListener { eliminarEstudiante() }
+        btnCrearMat.setOnClickListener { crearMateria() }
         btnGestionarMateria.setOnClickListener { gestionarMateria() }
         btnMenuRetorno.setOnClickListener { retorno() }
     }

@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">ExamenDanielSam</string>
+    <string name="btnEntrar">Entrar</string>
+
+    <string name="btnEstudiante">Estudiante</string>
+    <string name="btnCrearEst">Crear Estudiante</string>
+
+    <string name="btnActualizarEst">Actualizar</string>
+    <string name="btnEliminarEst">Eliminar</string>
+    <string name="btnCrearMat">Crear Materia</string>
+    <string name="btnGestionarMateria">Gestionar Materia</string>
+    <string name="btnMenuRetorno">Menu</string>
+
+    <string name="btnGuardarEst">Actualizar</string>
+    <string name="btnCancelar">Cancelar</string>
+
+    <string name="btnGuardarMateria">Guardar Materia</string>
+
+    <string name="btnGuardarEstudiante">Guardar Estudiante</string>
+    <string name="btnCancelarEstudiante">Cancelar</string>
+
+    <string name="btnActualizarMateria">Actualizar Materia</string>
+    <string name="btnEliminarMateria">Eliminar Materia</string>
+
+
+</resources>

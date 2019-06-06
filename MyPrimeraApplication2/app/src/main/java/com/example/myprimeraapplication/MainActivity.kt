@@ -25,6 +25,10 @@ class MainActivity : AppCompatActivity() {
             irAListView()
         }
 
+        btn_toast.setOnClickListener {
+            irAToast()
+        }
+
     }
 
     fun irAActividadDos(){
@@ -65,7 +69,7 @@ class MainActivity : AppCompatActivity() {
 
     fun irAToast(){
         val intentExplicito = Intent(
-            this, Snackbar::class.java
+            this, SnackbarActivity::class.java
         )
         startActivity(intentExplicito)
     }

@@ -14,7 +14,7 @@ class SnackbarActivity : AppCompatActivity() {
         setSupportActionBar(toolbar)
 
         fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+            Snackbar.make(view, "Nuevo usuario creado", Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show()
         }
     }

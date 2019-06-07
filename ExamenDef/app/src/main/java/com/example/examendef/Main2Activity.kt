@@ -1,22 +1,23 @@
-package com.example.myprimeraapplication
+package com.example.examendef
 
 import android.os.Bundle
 import android.support.design.widget.Snackbar
 import android.support.v7.app.AppCompatActivity;
 
-import kotlinx.android.synthetic.main.activity_snackbar.*
+import kotlinx.android.synthetic.main.activity_main2.*
 
-class SnackbarActivity : AppCompatActivity() {
+class Main2Activity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_snackbar)
+        setContentView(R.layout.activity_main2)
         setSupportActionBar(toolbar)
 
         fab.setOnClickListener { view ->
-            Snackbar.make(view, "Nuevo usuario creado", Snackbar.LENGTH_LONG)
+            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show()
         }
+
     }
 
 }

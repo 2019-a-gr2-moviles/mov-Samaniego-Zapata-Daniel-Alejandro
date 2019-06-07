@@ -25,6 +25,10 @@ class MainActivity : AppCompatActivity() {
             irAListView()
         }
 
+        btn_recyclerView.setOnClickListener {
+            irARecyclerView()
+        }
+
     }
 
     fun irAActividadDos(){
@@ -70,6 +74,12 @@ class MainActivity : AppCompatActivity() {
         startActivity(intentExplicito)
     }
 
+    fun irARecyclerView(){
+        val intentExplicito = Intent(
+            this, ReciclerViewActivity::class.java
+        )
+        startActivity(intentExplicito)
+    }
 }
 
 

@@ -29,13 +29,15 @@ class MainActivity : AppCompatActivity() {
 
         btn_recyclerView.setOnClickListener {
             irARecyclerView()
+        }
 
         btn_toast.setOnClickListener {
             irAToast()
-
         }
 
-    }}
+        btn_respuesta.setOnClickListener {
+            irAIntentRespuesta()
+        }
 }
 
     fun irAActividadDos(){
@@ -88,5 +90,12 @@ class MainActivity : AppCompatActivity() {
         startActivity(intentExplicito)
     }
 
+    fun irAIntentRespuesta(){
+        val intentExplicito = Intent(
+            this, IntentRespuestaActivity::class.java
+        )
+        startActivity(intentExplicito)
+    }
 
+}
 

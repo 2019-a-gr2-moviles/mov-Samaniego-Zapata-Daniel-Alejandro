@@ -18,6 +18,15 @@ class IntentRespuestaActivity : AppCompatActivity() {
             enviarIntentConRespuesta()
         }
 
+        btn_enviar_respuesta_propia.setOnClickListener {
+            enviarIntentConRespuestaPropia()
+        }
+
+    }
+
+    fun enviarIntentConRespuestaPropia(){
+        val intentPropio = Intent(this, ResultadoPropioActivity::class.java)
+        this.startActivityForResult(intentPropio, 305)
     }
 
     fun enviarIntentConRespuesta(){
@@ -62,6 +71,14 @@ class IntentRespuestaActivity : AppCompatActivity() {
                     Log.i("intent-respuesta", "El telefono es: $telefono")
 
                     }
+
+                305 ->{
+                    val nombre = data?.getStringExtra("nombreUsuario")
+                    val edad = data?.getIntExtra("edadUsuario", 0)
+
+                    Log.i("intent-respuesta", "Nombre: $nombre Edad: $edad")
+
+                }
                 }
             }
 

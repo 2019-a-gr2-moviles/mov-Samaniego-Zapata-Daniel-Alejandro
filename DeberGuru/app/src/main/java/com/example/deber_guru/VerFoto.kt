@@ -14,24 +14,30 @@ class VerFoto : AppCompatActivity() {
 
         val foto: Parcelable? = this.intent.getParcelableExtra<Parcelable>("foto")
 
-        if(foto?.id_fotografo==1){
+        when(foto?.id_fotografo){
 
-            /*img_anuncio.setImageResource(R.mipmap.icon3)
-            img_icon.setImageResource(R.mipmap.icon1)*/
-
-
-        } else{
-            /*
-            img_anuncio.setImageResource(R.mipmap.icon4)
-            img_icon.setImageResource(R.mipmap.icon2)
-             */
+            1-> {imageView.setImageResource(R.mipmap.galapagos)}
+            2-> {imageView.setImageResource(R.mipmap.arcoiris)}
+            3-> {imageView.setImageResource(R.mipmap.gs)}
         }
 
+        /*
+        if(foto?.id_fotografo==1){
+
+            imageView.setImageResource(R.mipmap.gmsj)
+            //img_icon.setImageResource(R.mipmap.icon1)
+
+
+       } else{
+
+            imageView.setImageResource(R.mipmap.arcoiris)
+            //img_icon.setImageResource(R.mipmap.icon2)
+
+       }*/
         txt_titulo.text = foto?.titulo
         txt_descripcionAsunto.text = foto?.descripcion
         txt_ph.text = foto?.fotografo
         txt_pais_origen.text = foto?.paisOrigen
-
 
     }
 }

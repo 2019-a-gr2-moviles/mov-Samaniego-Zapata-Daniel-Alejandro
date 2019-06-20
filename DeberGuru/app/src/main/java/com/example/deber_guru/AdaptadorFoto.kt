@@ -85,10 +85,10 @@ class AdaptadorFoto(
 
             when (foto.id_fotografo) {
                 1 -> {
-                    myViewHolder.imagenFoto.setImageResource(R.mipmap.gs)
+                    myViewHolder.imagenFoto.setImageResource(R.mipmap.galapagos)
                 }
                 2 -> {
-                    myViewHolder.imagenFoto.setImageResource(R.mipmap.gs)
+                    myViewHolder.imagenFoto.setImageResource(R.mipmap.arcoiris)
                 }
                 3 -> {
                     myViewHolder.imagenFoto.setImageResource(R.mipmap.gs)

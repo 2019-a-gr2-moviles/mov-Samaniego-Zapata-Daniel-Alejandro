@@ -75,7 +75,7 @@ class RecyclerViewPH : AppCompatActivity() {
         val intentExplicito = Intent(
             this, VerFoto::class.java
         )
-        intentExplicito.putExtra("descripcion",foto)
+        intentExplicito.putExtra("foto",foto)
         startActivity(intentExplicito)
     }
 

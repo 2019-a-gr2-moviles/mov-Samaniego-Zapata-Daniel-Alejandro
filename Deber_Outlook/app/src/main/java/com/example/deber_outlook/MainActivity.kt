@@ -1,4 +1,4 @@
-package com.example.deber_guru
+package com.example.deber_outlook
 
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
@@ -12,15 +12,14 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         btn_ingresar.setOnClickListener{
-            irRecyclerView()
+            irReciclerView()
         }
-
-
     }
 
-    fun irRecyclerView(){
+    fun irReciclerView(){
         val intentExplicito = Intent(
-            this, RecyclerView::class.java
+            this,
+            ReciclerView::class.java
         )
         startActivity(intentExplicito)
     }

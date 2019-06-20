@@ -8,7 +8,7 @@ import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
 import kotlinx.android.synthetic.main.activity_recycler_view.*
 
-class RecyclerView : AppCompatActivity() {
+class RecyclerViewPH : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,29 +20,29 @@ class RecyclerView : AppCompatActivity() {
 
             var addP1 = Parcelable(
                 "Erika Cueva",
-                "Arrecifes en Galapagos",
+                "Galapagos",
+                "Flora y fauna",
                 "3-Premier, 2-All Star, 1-Top20",
                 1,
-                "Alemania",
-                50
+                "Alemania"
             )
 
             var addP2 = Parcelable(
                 "Elton Wick",
                 "Paraguas",
+                "Multicolores como un arcoiris",
                 "2-Elite, 20-Popular",
                 2,
-                "China",
-                15
+                "China"
             )
 
-            var addP3 = Parcelable(
-                "FACEBOOK",
+             var addP3 = Parcelable(
+                "Carlo Macas",
+                "Ceinicienta",
                 "Texturas",
                 "1-Top30, 9-Premier",
                 3,
-                "India",
-                68
+                "India"
             )
 
             listaInicio.add(addP1)
@@ -50,34 +50,32 @@ class RecyclerView : AppCompatActivity() {
             listaInicio.add(addP3)
         }
 
-
         iniciarRecylerView(listaInicio, this,rv_foto)
+
     }
 
     fun iniciarRecylerView(
         lista: List<Parcelable>,
-        actividad: RecyclerView,
+        actividad: RecyclerViewPH,
         recycler_view: RecyclerView
     ) {
-        val adaptadorMensaje = AdaptadorFoto(
+        val adaptadorFoto = AdaptadorFoto(
             lista,
             actividad,
             recycler_view
         )
-        recycler_view.adapter = adaptadorMensaje
+        recycler_view.adapter = adaptadorFoto
         recycler_view.itemAnimator = DefaultItemAnimator()
         recycler_view.layoutManager = LinearLayoutManager(actividad)
 
-        adaptadorMensaje.notifyDataSetChanged()
+        adaptadorFoto.notifyDataSetChanged()
     }
 
-    fun irAVerMensajeActivity(mensaje: Parcelable){
+    fun irAVerFotoActivity(foto: Parcelable){
         val intentExplicito = Intent(
-            this,
-            VerMensaje::class.java
+            this, VerFoto::class.java
         )
-
-        intentExplicito.putExtra("descripcion",mensaje)
+        intentExplicito.putExtra("descripcion",foto)
         startActivity(intentExplicito)
     }
 

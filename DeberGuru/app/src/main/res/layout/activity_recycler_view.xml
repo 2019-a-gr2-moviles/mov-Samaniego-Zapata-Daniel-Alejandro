@@ -5,13 +5,13 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".RecyclerView">
+        tools:context=".RecyclerViewPH">
 
     <TextView
             android:text="Usuarios"
             android:layout_width="97dp"
             android:layout_height="32dp"
-            android:id="@+id/txt_usuario"
+            android:id="@+id/txt_ph"
             android:textSize="24sp"
             android:layout_marginTop="50dp"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
@@ -19,8 +19,9 @@
             android:layout_marginRight="8dp" app:layout_constraintHorizontal_bias="0.046"/>
     <android.support.v7.widget.RecyclerView
             android:layout_width="395dp"
-            android:layout_height="623dp" tools:layout_editor_absoluteY="100dp"
+            android:layout_height="623dp"
             android:id="@+id/rv_foto" app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
             android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
-            android:layout_marginRight="8dp"/>
+            android:layout_marginRight="8dp" android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/txt_ph" app:layout_constraintHorizontal_bias="0.0"/>
 </android.support.constraint.ConstraintLayout>

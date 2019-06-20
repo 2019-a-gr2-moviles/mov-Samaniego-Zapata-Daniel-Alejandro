@@ -38,8 +38,8 @@
             android:layout_marginTop="5dp" android:layout_below="@+id/txt_description"/>
 
     <view
-        class="android.view.View"
-        android:layout_width="fill_parent"
-        android:layout_height="1dp"
-        android:background="#E6E4E2"/>
+            class="android.view.View"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#E6E4E2"/>
 </RelativeLayout>

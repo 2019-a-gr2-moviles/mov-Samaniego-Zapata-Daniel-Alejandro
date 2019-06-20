@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
 
     fun irRecyclerView(){
         val intentExplicito = Intent(
-            this, RecyclerView::class.java
+            this, RecyclerViewPH::class.java
         )
         startActivity(intentExplicito)
     }

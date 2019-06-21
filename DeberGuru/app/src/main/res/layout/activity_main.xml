@@ -8,26 +8,33 @@
         tools:context=".MainActivity" android:background="#000001">
     <TextView
             android:text="Envíe sus fotos a los desafíos fotográficos diarios y reciba comentarios de millones de personas como usted que simplemente les encanta tomar fotos."
-            android:layout_width="315dp"
-            android:layout_height="98dp"
+            android:layout_width="294dp"
+            android:layout_height="79dp"
             android:id="@+id/txt_descripcionAsunto"
-            app:layout_constraintEnd_toEndOf="@+id/imageView2"
-            app:layout_constraintStart_toStartOf="@+id/imageView2" app:layout_constraintHorizontal_bias="0.496"
-            app:layout_constraintTop_toBottomOf="@+id/imageView2" android:layout_marginTop="96dp"
-            android:textColorHint="#FDFDFE" android:background="#00FDFDFE" android:textColor="#FDFDFE"/>
+            android:textColorHint="#FDFDFE" android:background="#00FDFDFE" android:textColor="#FDFDFE"
+            android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5" app:layout_constraintEnd_toEndOf="@+id/imageView5"
+            app:layout_constraintStart_toStartOf="@+id/imageView5"/>
     <Button
             android:text="Ingresar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/btn_ingresar" app:layout_constraintStart_toStartOf="@+id/txt_descripcionAsunto"
-            app:layout_constraintEnd_toEndOf="@+id/txt_descripcionAsunto" android:layout_marginTop="56dp"
-            app:layout_constraintTop_toBottomOf="@+id/txt_descripcionAsunto" android:textColorHint="#FBFCFD"/>
+            app:layout_constraintEnd_toEndOf="@+id/txt_descripcionAsunto" android:layout_marginTop="36dp"
+            app:layout_constraintTop_toBottomOf="@+id/txt_descripcionAsunto" android:textColorHint="#FBFCFD"
+            app:layout_constraintHorizontal_bias="0.502"/>
     <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" app:srcCompat="@mipmap/gurushots"
+            android:layout_width="218dp"
+            android:layout_height="55dp" app:srcCompat="@mipmap/gurushots"
             android:id="@+id/imageView2" app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
             android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
-            android:layout_marginRight="8dp" android:layout_marginTop="140dp" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginRight="8dp" android:layout_marginTop="44dp" app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintHorizontal_bias="0.497"/>
+    <ImageView
+            android:layout_width="125dp"
+            android:layout_height="143dp" app:srcCompat="@mipmap/top"
+            android:id="@+id/imageView5" app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:layout_constraintEnd_toEndOf="@+id/imageView2" android:layout_marginTop="40dp"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2"/>
 
 </android.support.constraint.ConstraintLayout>

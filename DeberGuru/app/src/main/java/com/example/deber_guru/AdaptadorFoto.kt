@@ -27,7 +27,7 @@ class AdaptadorFoto(
             var premiosTextView: String = ""
 
             init {
-                imagenFoto=view.findViewById(R.id.imageGuru) as ImageView
+                imagenFoto=view.findViewById(R.id.imgGuru) as ImageView
                 nombreFotografoTextView = view.findViewById(R.id.txt_nombre) as TextView
                 descriptionTextView = view.findViewById(R.id.txt_descripcionAsunto) as TextView
                 paisOrigenTextView = view.findViewById(R.id.txt_pais) as TextView

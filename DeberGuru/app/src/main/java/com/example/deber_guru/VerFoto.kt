@@ -3,7 +3,6 @@ package com.example.deber_guru
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.txt_descripcionAsunto
-import kotlinx.android.synthetic.main.activity_main.txt_titulo
 import kotlinx.android.synthetic.main.activity_ver_foto.*
 
 class VerFoto : AppCompatActivity() {

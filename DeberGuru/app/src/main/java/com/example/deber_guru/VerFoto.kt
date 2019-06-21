@@ -17,7 +17,9 @@ class VerFoto : AppCompatActivity() {
 
             1-> {imageView.setImageResource(R.mipmap.galapagos)}
             2-> {imageView.setImageResource(R.mipmap.arcoiris)}
-            3-> {imageView.setImageResource(R.mipmap.gs)}
+            3-> {imageView.setImageResource(R.mipmap.flor)}
+            4-> {imageView.setImageResource(R.mipmap.abejin)}
+            5-> {imageView.setImageResource(R.mipmap.tiempo)}
         }
 
         /*
@@ -37,6 +39,7 @@ class VerFoto : AppCompatActivity() {
         txt_descripcionAsunto.text = foto?.descripcion
         txt_ph.text = foto?.fotografo
         txt_pais_origen.text = foto?.paisOrigen
+        txt_premios.text = foto?.premios
 
     }
 }

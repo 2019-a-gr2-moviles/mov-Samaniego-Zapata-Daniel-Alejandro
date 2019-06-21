@@ -20,17 +20,17 @@ class AdaptadorFoto(
 
             var nombreFotografoTextView: TextView
             var descriptionTextView: TextView
-            var paisOrigenTextView: TextView
+            var paisOrigenTextView: String = ""
             var idFotografo: Int =0
             var imagenFoto: ImageView
-            var tituloTextView: String = ""
+            var tituloTextView:TextView
             var premiosTextView: String = ""
 
             init {
                 imagenFoto=view.findViewById(R.id.imgGuru) as ImageView
                 nombreFotografoTextView = view.findViewById(R.id.txt_nombre) as TextView
                 descriptionTextView = view.findViewById(R.id.txt_descripcionAsunto) as TextView
-                paisOrigenTextView = view.findViewById(R.id.txt_pais) as TextView
+                tituloTextView = view.findViewById(R.id.txt_titulo_img) as TextView
 
 
                 val layout = view.findViewById(R.id.relative_ly) as RelativeLayout
@@ -38,11 +38,11 @@ class AdaptadorFoto(
                 layout.setOnClickListener {
                     val mensaje =Parcelable(
                         nombreFotografoTextView.text.toString(),
-                        tituloTextView,
+                        tituloTextView.text.toString(),
                         descriptionTextView.text.toString(),
                         premiosTextView,
                         idFotografo,
-                        paisOrigenTextView.text.toString()
+                        paisOrigenTextView
 
                     )
                     irAVerMensajeActivity(mensaje)
@@ -77,9 +77,9 @@ class AdaptadorFoto(
 
             myViewHolder.nombreFotografoTextView.text = foto.fotografo
             myViewHolder.descriptionTextView.text = foto.descripcion
-            myViewHolder.paisOrigenTextView.text = foto.paisOrigen
+            myViewHolder.paisOrigenTextView = foto.paisOrigen
             myViewHolder.idFotografo = foto.id_fotografo
-            myViewHolder.tituloTextView=foto.titulo
+            myViewHolder.tituloTextView.text=foto.titulo
             myViewHolder.premiosTextView=foto.premios
 
 
@@ -91,7 +91,13 @@ class AdaptadorFoto(
                     myViewHolder.imagenFoto.setImageResource(R.mipmap.arcoiris)
                 }
                 3 -> {
-                    myViewHolder.imagenFoto.setImageResource(R.mipmap.gs)
+                    myViewHolder.imagenFoto.setImageResource(R.mipmap.flor)
+                }
+                4 -> {
+                    myViewHolder.imagenFoto.setImageResource(R.mipmap.abejin)
+                }
+                5 -> {
+                    myViewHolder.imagenFoto.setImageResource(R.mipmap.tiempo)
                 }
 
             }

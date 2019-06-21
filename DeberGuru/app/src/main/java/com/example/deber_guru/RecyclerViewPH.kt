@@ -20,34 +20,55 @@ class RecyclerViewPH : AppCompatActivity() {
 
             var addP1 = Parcelable(
                 "Erika Cueva",
-                "Galapagos",
+                "GALÁPAGOS",
                 "Flora y fauna",
-                "3-Premier, 2-All Star, 1-Top20",
+                "Trofeos: 3-Premier, 2-All Star, 1-Top20",
                 1,
                 "Alemania"
             )
 
             var addP2 = Parcelable(
                 "Elton Wick",
-                "Paraguas",
-                "Multicolores como un arcoiris",
-                "2-Elite, 20-Popular",
+                "ARCOIRIS",
+                "Multicolores como tus estados de ánimo",
+                "Trofeos: 2-Elite, 20-Popular",
                 2,
                 "China"
             )
 
              var addP3 = Parcelable(
                 "Carlo Macas",
-                "Ceinicienta",
-                "Texturas",
-                "1-Top30, 9-Premier",
+                "FLORECITA",
+                "Si bajas tu mirada encontrarás otros mundos.",
+                "Trofeos: 1-Top30, 9-Premier",
                 3,
                 "India"
             )
 
+
+            var addP4 = Parcelable(
+                "Ergun Korel",
+                "ABEJIN",
+                ":=))",
+                "Trofeos: 1-Top100, 2-GuruPick, 123-Swap",
+                4,
+                "Turquía"
+            )
+
+
+            var addP5 = Parcelable(
+                "Alejandra Campos",
+                "TIEMPO",
+                "Aún vuelvo cada día a ciertos lugares, solo para verlas, no me olvidan",
+                "Trofeos: 4-Skilled, 5-Elite",
+                5,
+                "Estados Unidos"
+            )
             listaInicio.add(addP1)
             listaInicio.add(addP2)
             listaInicio.add(addP3)
+            listaInicio.add(addP4)
+            listaInicio.add(addP5)
         }
 
         iniciarRecylerView(listaInicio, this,rv_foto)

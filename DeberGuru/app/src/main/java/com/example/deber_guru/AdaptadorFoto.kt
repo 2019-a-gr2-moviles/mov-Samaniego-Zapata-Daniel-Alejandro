@@ -79,8 +79,8 @@ class AdaptadorFoto(
             myViewHolder.descriptionTextView.text = foto.descripcion
             myViewHolder.paisOrigenTextView = foto.paisOrigen
             myViewHolder.idFotografo = foto.id_fotografo
-            myViewHolder.tituloTextView.text=foto.titulo
-            myViewHolder.premiosTextView=foto.premios
+            myViewHolder.tituloTextView.text = foto.titulo
+            myViewHolder.premiosTextView = foto.premios
 
 
             when (foto.id_fotografo) {

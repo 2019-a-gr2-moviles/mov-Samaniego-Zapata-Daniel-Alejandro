@@ -65,7 +65,7 @@ class ConexionHttpActivity : AppCompatActivity() {
                 "Error instanciando la empresa")
         }
 
-        var url = 
+        var url =
 
         url
             .httpGet()

@@ -65,9 +65,24 @@ class ConexionHttpActivity : AppCompatActivity() {
                 "Error instanciando la empresa")
         }
 
+        var url = 
+
+        url
+            .httpGet()
+            .responseString { request, response, result ->
+                when (result) {
+                    is Failure -> {
+                        val ex = result.getException()
+                        Log.i("http","Error: ${ex.message}")
+                    }
+                    is Success -> {
+                        val data = result.get()
+                        Log.i("http","Data: ${data}")
+                    }
+                }
 
 
-    }
+            }
 
 
 

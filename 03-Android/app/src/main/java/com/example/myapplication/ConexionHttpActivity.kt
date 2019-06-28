@@ -30,7 +30,7 @@ class ConexionHttpActivity : AppCompatActivity() {
                   "createdAt": 1561663617636,
                   "updatedAt": 1561663617636,
                   "id": 1,
-                  "nombre": "Manticore Labs"
+                  "nombreEmpresa": "Manticore Labs"
                 }
             ]
         """.trimIndent()
@@ -41,31 +41,44 @@ class ConexionHttpActivity : AppCompatActivity() {
 
             empresaInstancia?.forEach {
 
-                Log.i("http",
-                    "Nombre ${it.nombre}")
+                Log.i(
+                    "http",
+                    "Nombre ${it.nombre}"
+                )
 
-                Log.i("http",
-                    "Id ${it.id}")
+                Log.i(
+                    "http",
+                    "Id ${it.id}"
+                )
 
-                Log.i("http",
-                    "Fecha ${it.fechaCreacion}")
+                Log.i(
+                    "http",
+                    "Fecha ${it.fechaCreacion}"
+                )
 
                 it.usuarioDeEmpresa.forEach {
-                    Log.i("http",
-                        "Nombre ${it.nombre}")
-                    Log.i("http",
-                        "FK ${it.fkEmpresa}")
+                    Log.i(
+                        "http",
+                        "Nombre ${it.nombre}"
+                    )
+                    Log.i(
+                        "http",
+                        "FK ${it.fkEmpresa}"
+                    )
                 }
 
             }
-        } catch (e:Exception){
-            Log.i("http","${e.message}")
-
-            Log.i("http",
-                "Error instanciando la empresa")
+        } catch (e: Exception) {
+            Log.i("http", "${e.message}")
+            Log.i(
+                "http",
+                "Error instanciando la empresa"
+            )
         }
 
-        var url =
+
+        val url = "http://172.31.104.107:1337/empresa/1"
+
 
         url
             .httpGet()
@@ -73,18 +86,23 @@ class ConexionHttpActivity : AppCompatActivity() {
                 when (result) {
                     is Failure -> {
                         val ex = result.getException()
-                        Log.i("http","Error: ${ex.message}")
+                        Log.i("http", "Error: ${ex.message}")
                     }
                     is Success -> {
                         val data = result.get()
-                        Log.i("http","Data: ${data}")
+                        Log.i("http", "Data: ${data}")
+
+                        val empresaParseada = Klaxon()
+                            .parse<Empresa>(data)
+                        if (empresaParseada != null) {
+                            Log.i("http"," iiiiiiiiiiiiiiiiiiii ")
+                            Log.i("http","${empresaParseada.nombre} ")
+                            Log.i("http","${empresaParseada.id} ")
+                        }
                     }
                 }
-
-
             }
 
 
-
-
+    }
 }

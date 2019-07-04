@@ -1,6 +1,6 @@
 package com.example.myapplication
 
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import com.beust.klaxon.Klaxon
@@ -8,6 +8,7 @@ import java.lang.Exception
 import java.util.*
 import com.github.kittinunf.result.Result.*
 import com.github.kittinunf.fuel.httpGet
+import com.github.kittinunf.fuel.httpPost
 
 class ConexionHttpActivity : AppCompatActivity() {
 
@@ -77,7 +78,7 @@ class ConexionHttpActivity : AppCompatActivity() {
         }
 
 
-        val url = "http://172.31.104.107:1337/empresa/1"
+        val url = "http://172.31.104.77:1337/empresa/1"
 
 
         url
@@ -99,6 +100,31 @@ class ConexionHttpActivity : AppCompatActivity() {
                             Log.i("http","${empresaParseada.nombre} ")
                             Log.i("http","${empresaParseada.id} ")
                         }
+                    }
+                }
+            }
+
+        val urlCrearEmpresa = "http://172.31.104.77:1337/empresa"
+
+        val parametrosCrearEmpresa = listOf(
+            "nombre" to "Manticore Labs 2", // Este sirve
+            "apellido" to "Sama", // Colados
+            "sueldo" to 12.20, // Colados
+            "casado" to false, // Colados
+            "true" to null // Colados
+        )
+
+        urlCrearEmpresa
+            .httpPost(parametrosCrearEmpresa)
+            .responseString{ request, response, result ->
+                when(result){
+                    is Failure -> {
+                        val error = result.getException()
+                        Log.i("http", "Error: ${error}")
+                    }
+                    is Success -> {
+                        val empresaString = result.get()
+                        Log.i("http", "$empresaString")
                     }
                 }
             }

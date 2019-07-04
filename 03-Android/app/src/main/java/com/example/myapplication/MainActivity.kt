@@ -1,7 +1,7 @@
 package com.example.myapplication
 
 import android.content.Intent
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_parcelable.*
@@ -30,6 +30,9 @@ class MainActivity : AppCompatActivity() {
         }
         btn_http.setOnClickListener {
             irAHttp()
+        }
+        btn_Mapa.setOnClickListener {
+            irAMapa()
         }
 
     }
@@ -88,6 +91,13 @@ class MainActivity : AppCompatActivity() {
     fun irAHttp(){
         val intentExplicito = Intent(
             this, ConexionHttpActivity::class.java
+        )
+        startActivity(intentExplicito)
+    }
+
+    fun irAMapa(){
+        val intentExplicito = Intent(
+            this, MapsActivity::class.java
         )
         startActivity(intentExplicito)
     }

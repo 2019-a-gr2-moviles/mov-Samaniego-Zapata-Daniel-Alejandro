@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Registro" android:background="#162033">
+
+    <TextView
+            android:text="REGISTRO"
+            android:layout_width="364dp"
+            android:layout_height="52dp"
+            android:id="@+id/txt_registro2" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.333"
+            android:background="#393B4D" android:textColor="#E9E9E0" android:textSize="20sp"
+            android:textStyle="bold" android:textIsSelectable="true" android:gravity="center"/>
+    <TextView
+            android:text="User name"
+            android:layout_width="203dp"
+            android:layout_height="21dp"
+            android:id="@+id/txt_userNamed" android:layout_marginTop="28dp"
+            app:layout_constraintTop_toBottomOf="@+id/txt_registro2" android:background="#1F293A"
+            android:textColor="#85FFFFFF"
+            app:layout_constraintStart_toStartOf="@+id/txt_nombred"
+            app:layout_constraintEnd_toEndOf="@+id/txt_nombred"/>
+    <TextView
+            android:text="Nombres"
+            android:layout_width="203dp"
+            android:layout_height="21dp"
+            android:id="@+id/txt_nombred" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/txt_userNamed"
+            android:background="#1F293A"
+            android:textColor="#85FFFFFF" app:layout_constraintStart_toEndOf="@+id/imageView4"
+            android:layout_marginStart="8dp" android:layout_marginLeft="8dp"/>
+    <TextView
+            android:text="Apellidos"
+            android:layout_width="199dp"
+            android:layout_height="21dp"
+            android:id="@+id/txt_apellidod" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/txt_nombred"
+            app:layout_constraintStart_toStartOf="@+id/txt_nombred"
+            app:layout_constraintEnd_toEndOf="@+id/txt_nombred" android:background="#1F293A"
+            android:textColor="#85FFFFFF"/>
+    <TextView
+            android:text="Cédula"
+            android:layout_width="345dp"
+            android:layout_height="21dp"
+            android:id="@+id/txt_cedulad"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+            app:layout_constraintHorizontal_bias="0.122" android:background="#1F293A" android:textColor="#85FFFFFF"
+            android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/imageView4"/>
+    <TextView
+            android:text="Celular"
+            android:layout_width="345dp"
+            android:layout_height="21dp"
+            android:id="@+id/txt_correod"
+            app:layout_constraintStart_toStartOf="@+id/txt_cedulad"
+            app:layout_constraintEnd_toEndOf="@+id/txt_cedulad" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/txt_cedulad" app:layout_constraintHorizontal_bias="0.0"
+            android:background="#1F293A" android:textColor="#85FFFFFF"/>
+    <TextView
+            android:text="Contraseña"
+            android:layout_width="345dp"
+            android:layout_height="21dp"
+            android:id="@+id/txt_contraseniad"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/txt_correo"
+            app:layout_constraintStart_toStartOf="@+id/txt_correo"
+            app:layout_constraintEnd_toEndOf="@+id/txt_correo" android:background="#1F293A"
+            android:textColor="#85FFFFFF"/>
+    <TextView
+            android:text="Confirmar contraseña"
+            android:layout_width="345dp"
+            android:layout_height="21dp"
+            android:id="@+id/txt_confirmarContraseniad"
+            android:layout_marginTop="12dp" app:layout_constraintTop_toBottomOf="@+id/txt_contraseniad"
+            android:background="#1F293A" android:textColor="#85FFFFFF"
+            app:layout_constraintStart_toStartOf="@+id/txt_contraseniad"
+            app:layout_constraintEnd_toEndOf="@+id/txt_contraseniad"/>
+    <Button
+            android:text="Registrar"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:id="@+id/btn_registrar" android:background="#F30C0C"
+            android:textColor="#FBFCFD" android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp" android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginRight="8dp" android:layout_marginTop="40dp"
+            app:layout_constraintTop_toBottomOf="@+id/txt_confirmarContraseniad"
+            app:layout_constraintHorizontal_bias="0.578"/>
+    <TextView
+            android:text="Cargo"
+            android:layout_width="345dp"
+            android:layout_height="21dp"
+            android:id="@+id/txt_cargod"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/txt_correod"
+            app:layout_constraintStart_toStartOf="@+id/txt_correod"
+            app:layout_constraintEnd_toEndOf="@+id/txt_correod" android:background="#1F293A"
+            android:textColor="#85FFFFFF"/>
+    <TextView
+            android:text="Correo"
+            android:layout_width="345dp"
+            android:layout_height="21dp"
+            android:id="@+id/txt_correo" app:layout_constraintStart_toStartOf="@+id/txt_cargod"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/txt_cargod" app:layout_constraintEnd_toEndOf="@+id/txt_cargod"
+            android:background="#1F293A" android:textColor="#85FFFFFF"/>
+    <ImageView
+            android:layout_width="142dp"
+            android:layout_height="125dp" tools:srcCompat="@tools:sample/avatars"
+            android:id="@+id/imageView4" android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@+id/txt_registro2"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="16dp" android:layout_marginStart="16dp"
+    />
+</android.support.constraint.ConstraintLayout>

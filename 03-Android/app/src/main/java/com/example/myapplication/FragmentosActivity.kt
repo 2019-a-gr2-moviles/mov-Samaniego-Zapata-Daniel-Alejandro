@@ -13,6 +13,10 @@ class FragmentosActivity : AppCompatActivity() {
         btn_primer.setOnClickListener {
             abrirPrimerFragmento()
         }
+
+        btn_segundo.setOnClickListener {
+            abrirSegundoFragmento()
+        }
     }
 
 
@@ -24,7 +28,22 @@ class FragmentosActivity : AppCompatActivity() {
         // 3) Definir la instacion del fragmento
         val primerFragmento = PrimerFragment()
         // 4) Reemplazamos el fragmento
-        fra
+        transaccion.replace(R.id.cly_fragmentos, primerFragmento)
+        // 5) Terminar la transaccion
+        transaccion.commit()
+    }
+
+    fun abrirSegundoFragmento(){
+        // 1) Manager
+        val fragmentManager = supportFragmentManager
+        // 2) Empezar la transaccion
+        val transaccion = fragmentManager.beginTransaction()
+        // 3) Definir la instacion del fragmento
+        val primerFragmento = PrimerFragment()
+        // 4) Reemplazamos el fragmento
+        transaccion.replace(R.id.cly_fragmentos, primerFragmento)
+        // 5) Terminar la transaccion
+        transaccion.commit()
     }
 
 }

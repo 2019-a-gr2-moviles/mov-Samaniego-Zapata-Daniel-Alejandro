@@ -10,12 +10,12 @@ import com.example.examen2b.actividades.ListaMateria
 import com.example.examen2b.modelo.Materia
 
 
-class AdaptadorListaMedicamentos(
+class AdaptadorListaMaterias(
     private val listaMaterias: ArrayList<Materia>,
     private val contexto: ListaMateria,
     private val recyclerView: androidx.recyclerview.widget.RecyclerView
 ) :
-    androidx.recyclerview.widget.RecyclerView.Adapter<AdaptadorListaMedicamentos.MyViewHolder>() {
+    androidx.recyclerview.widget.RecyclerView.Adapter<AdaptadorListaMaterias.MyViewHolder>() {
 
     inner class MyViewHolder(view: View) : androidx.recyclerview.widget.RecyclerView.ViewHolder(view) {
         var idPacienteTextView: TextView
@@ -48,10 +48,10 @@ class AdaptadorListaMedicamentos(
                 val medicamento = Materia(
                     idTextView.text.toString().toInt(),
                     nombreTextView.text.toString(),
-                    composicionTextView.text.toString().toInt(),
-                    gramosTextView.text.toString().toInt(),
+                    composicionTextView.text.toString(),
+                    gramosTextView.text.toString(),
                     usoTextView.text.toString(),
-                    fechaCaducidadTextView.text.toString(),
+                    fechaCaducidadTextView.text.toString().toInt(),
 
                     idPacienteTextView.text.toString().toInt(),
                     "0", "0"
@@ -68,7 +68,7 @@ class AdaptadorListaMedicamentos(
     }
     //Esta función define el template que vamos a utilizar.
     // El template esta en la carpeta de recursos res/layout -> layout
-    override fun onCreateViewHolder(p0: ViewGroup, p1: Int): AdaptadorListaMedicamentos.MyViewHolder {
+    override fun onCreateViewHolder(p0: ViewGroup, p1: Int): AdaptadorListaMaterias.MyViewHolder {
         val itemView = LayoutInflater
             .from(p0.context)
             .inflate(
@@ -84,7 +84,7 @@ class AdaptadorListaMedicamentos(
         return listaMaterias.size
     }
 
-    override fun onBindViewHolder(myViewHolder: AdaptadorListaMedicamentos.MyViewHolder, position: Int) {
+    override fun onBindViewHolder(myViewHolder: AdaptadorListaMaterias.MyViewHolder, position: Int) {
         val materia: Materia = listaMaterias[position]
         myViewHolder.idTextView.text = materia.id.toString()
         myViewHolder.idPacienteTextView.text = materia.idEstudiante.toString()
@@ -93,7 +93,7 @@ class AdaptadorListaMedicamentos(
         myViewHolder.gramosTextView.text = materia.codigo.toString()
       // myViewHolder.pastillasTextView.text = medicamento.codigo
         myViewHolder.usoTextView.text = materia.fechaCreacion
-        myViewHolder.fechaCaducidadTextView.text = materia.numeroHorasPorSemana
+        myViewHolder.fechaCaducidadTextView.text = materia.numeroHorasPorSemana.toString()
     }
 
 //    fun crearCliente(id: Int, nombre: String, apellido: String, cedula: String): Cliente {

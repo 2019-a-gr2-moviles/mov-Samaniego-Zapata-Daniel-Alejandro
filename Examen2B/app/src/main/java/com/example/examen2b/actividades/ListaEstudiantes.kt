@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.util.Log
 import com.beust.klaxon.Klaxon
 import com.example.examen2b.R
-import com.example.examen2b.adaptador.AdaptadorListaPacientes
+import com.example.examen2b.adaptador.AdaptadorListaEstudiante
 import com.example.examen2b.modelo.*
 import com.example.examen2b.valoresEstaticos.Datos
 import com.example.examen2b.valoresEstaticos.Servidor
@@ -28,7 +28,7 @@ class ListaEstudiantes : AppCompatActivity() {
         actividad: ListaEstudiantes,
         recyclerView: androidx.recyclerview.widget.RecyclerView
     ) {
-        val adaptadorCliente = AdaptadorListaPacientes(listaEstudiantes, actividad, recyclerView)
+        val adaptadorCliente = AdaptadorListaEstudiante(listaEstudiantes, actividad, recyclerView)
         rv_pacientes.adapter = adaptadorCliente
         rv_pacientes.itemAnimator = androidx.recyclerview.widget.DefaultItemAnimator()
         rv_pacientes.layoutManager = androidx.recyclerview.widget.LinearLayoutManager(actividad)

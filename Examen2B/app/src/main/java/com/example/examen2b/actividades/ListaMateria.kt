@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import com.example.examen2b.R
-import com.example.examen2b.adaptador.AdaptadorListaMedicamentos
+import com.example.examen2b.adaptador.AdaptadorListaMaterias
 import com.example.examen2b.modelo.Materia
 import com.example.examen2b.valoresEstaticos.Datos
 import com.example.examen2b.valoresEstaticos.Servidor
@@ -29,7 +29,7 @@ class ListaMateria : AppCompatActivity() {
         actividad: ListaMateria,
         recyclerView: androidx.recyclerview.widget.RecyclerView
     ) {
-        val adaptadorMedicamento = AdaptadorListaMedicamentos(listaMaterias, actividad, recyclerView)
+        val adaptadorMedicamento = AdaptadorListaMaterias(listaMaterias, actividad, recyclerView)
         rv_medicamentos.adapter = adaptadorMedicamento
         rv_medicamentos.itemAnimator = androidx.recyclerview.widget.DefaultItemAnimator()
         rv_medicamentos.layoutManager = androidx.recyclerview.widget.LinearLayoutManager(actividad)

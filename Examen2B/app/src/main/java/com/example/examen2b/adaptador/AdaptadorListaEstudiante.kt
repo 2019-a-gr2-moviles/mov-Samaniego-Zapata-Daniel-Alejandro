@@ -11,12 +11,12 @@ import android.widget.LinearLayout
 import android.widget.TextView
 
 
-class AdaptadorListaPacientes(
+class AdaptadorListaEstudiante(
     private val listaEstudiantes: ArrayList<Estudiante>,
     private val contexto: ListaEstudiantes,
     private val recyclerView: androidx.recyclerview.widget.RecyclerView
 ) :
-    androidx.recyclerview.widget.RecyclerView.Adapter<AdaptadorListaPacientes.MyViewHolder>() {
+    androidx.recyclerview.widget.RecyclerView.Adapter<AdaptadorListaEstudiante.MyViewHolder>() {
 
     inner class MyViewHolder(view: View) : androidx.recyclerview.widget.RecyclerView.ViewHolder(view) {
         var infoTextView: TextView
@@ -78,7 +78,7 @@ class AdaptadorListaPacientes(
 
     //Esta función define el template que vamos a utilizar.
     // El template esta en la carpeta de recursos res/layout -> layout
-    override fun onCreateViewHolder(p0: ViewGroup, p1: Int): AdaptadorListaPacientes.MyViewHolder {
+    override fun onCreateViewHolder(p0: ViewGroup, p1: Int): AdaptadorListaEstudiante.MyViewHolder {
         val itemView = LayoutInflater
             .from(p0.context)
             .inflate(
@@ -94,7 +94,7 @@ class AdaptadorListaPacientes(
         return listaEstudiantes.size
     }
 
-    override fun onBindViewHolder(myViewHolder: AdaptadorListaPacientes.MyViewHolder, position: Int) {
+    override fun onBindViewHolder(myViewHolder: AdaptadorListaEstudiante.MyViewHolder, position: Int) {
         val estudiante: Estudiante = listaEstudiantes[position]
         myViewHolder.idTextView.text = estudiante.id.toString()
         myViewHolder.infoTextView.text = "Autor #${estudiante.id}"

@@ -8,40 +8,42 @@
         tools:context=".FragmentosActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="381dp"
-            android:layout_height="514dp"
-            android:id="@+id/cty_fragmentos" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginLeft="16dp" android:layout_marginStart="16dp" app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
-            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.0"
-            android:layout_marginBottom="52dp">
+            android:layout_width="375dp"
+            android:layout_height="477dp"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp" android:layout_marginBottom="108dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.523"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/btn_segundo"
+            android:id="@+id/cly_fragmentos">
 
     </androidx.constraintlayout.widget.ConstraintLayout>
     <Button
             android:text="Primer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/btn_primero" app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="32dp"
-            android:layout_marginStart="32dp"
-            app:layout_constraintTop_toTopOf="@+id/btn_segundo" app:layout_constraintBottom_toBottomOf="@+id/btn_segundo"/>
+            android:id="@+id/btn_primer" app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+            app:layout_constraintHorizontal_bias="0.107" android:layout_marginTop="60dp"
+            app:layout_constraintTop_toTopOf="parent"/>
     <Button
             android:text="Segundo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/btn_segundo" android:layout_marginTop="56dp"
-            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toEndOf="@+id/btn_primero"
-            android:layout_marginLeft="40dp" android:layout_marginStart="40dp"
-            app:layout_constraintEnd_toStartOf="@+id/btn_tercero" android:layout_marginEnd="8dp"
-            android:layout_marginRight="8dp" app:layout_constraintHorizontal_bias="0.028"
-            android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/cty_fragmentos"
-            app:layout_constraintVertical_bias="0.054"/>
+            android:id="@+id/btn_segundo"
+            app:layout_constraintTop_toTopOf="@+id/btn_primer"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_primer"
+            app:layout_constraintStart_toEndOf="@+id/btn_primer"
+            android:layout_marginLeft="24dp" android:layout_marginStart="24dp"
+            app:layout_constraintVertical_bias="1.0"/>
     <Button
             android:text="Tercero"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/btn_tercero"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginEnd="32dp" android:layout_marginRight="32dp"
             app:layout_constraintTop_toTopOf="@+id/btn_segundo"
-            app:layout_constraintBottom_toBottomOf="@+id/btn_segundo"/>
+            app:layout_constraintBottom_toBottomOf="@+id/btn_segundo"
+            app:layout_constraintStart_toEndOf="@+id/btn_segundo" android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp" app:layout_constraintVertical_bias="0.0"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

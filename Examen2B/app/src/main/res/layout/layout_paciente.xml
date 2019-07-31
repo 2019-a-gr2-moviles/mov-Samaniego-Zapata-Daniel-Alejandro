@@ -37,11 +37,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" android:id="@+id/textView16" android:textColor="#D5030303"/>
             <TextView
-                    android:text="Número de Películas"
+                    android:text="Semestre Actual"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" android:id="@+id/textView17" android:textColor="#D5030303"/>
             <TextView
-                    android:text="Retirado"
+                    android:text="Graduado"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" android:id="@+id/textView18" android:textColor="#D5030303"/>
         </LinearLayout>

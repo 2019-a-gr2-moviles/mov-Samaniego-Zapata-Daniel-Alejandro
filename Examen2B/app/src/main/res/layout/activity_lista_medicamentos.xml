@@ -8,9 +8,11 @@
         tools:context=".actividades.ListaMateria">
 
     <androidx.recyclerview.widget.RecyclerView
-            android:layout_width="417dp"
-            android:layout_height="729dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="365dp"
+            android:layout_height="575dp" app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
             android:id="@+id/rv_medicamentos"
-            app:layout_constraintHorizontal_bias="0.0"/>
+            app:layout_constraintHorizontal_bias="0.0" android:layout_marginStart="30dp" android:layout_marginTop="25dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginEnd="16dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

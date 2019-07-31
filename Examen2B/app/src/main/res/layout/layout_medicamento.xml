@@ -23,19 +23,19 @@
                 android:layout_width="208dp"
                 android:layout_height="wrap_content">
             <TextView
-                    android:text="Año de Lanzamiento}"
+                    android:text="Fecha de creación"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" android:id="@+id/textView6" android:textColor="#C8000000"/>
             <TextView
-                    android:text="Rating"
+                    android:text="Número de horas por semana"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" android:id="@+id/textView9" android:textColor="#C8000000"/>
             <TextView
-                    android:text="Actores principales"
+                    android:text="Activo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" android:id="@+id/textView10" android:textColor="#C8000000"/>
             <TextView
-                    android:text="Sinopsis"
+                    android:text="Descripción"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" android:id="@+id/textView11" android:textColor="#C8000000"/>
         </LinearLayout>
@@ -68,7 +68,8 @@
         <Button
                 android:text="@string/btn_eliminar"
                 android:layout_width="107dp"
-                android:layout_height="wrap_content" android:id="@+id/btn_eliminar_med" android:layout_weight="1"/>
+                android:layout_height="wrap_content" android:id="@+id/btn_eliminar_med" android:layout_weight="1"
+                android:textSize="14sp"/>
         <Button
                 android:text="@string/btn_actualizar"
                 android:layout_width="wrap_content"

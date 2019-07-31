@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name" translatable="false">Entrenador - Pokemon</string>
+    <string name="app_name" translatable="false">Estudiante - Materia</string>
     <string name="title_activity_pacientes" translatable="false">Entenador</string>
     <string name="title_activity_gestion" translatable="false">Gestión de Entrenador</string>
     <string name="txt_usuario" translatable="false">Nombre</string>
